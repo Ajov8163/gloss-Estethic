@@ -282,15 +282,15 @@
 <script>const products = [{
   id: 1,
   name: "Crema Hidratante Premium",
-  price: 49.99,
-  image: "https://i.ibb.co/M9ZYyNk/cream-moisturizer.jpg",
+  price: 20000,
+  image: "/img/crema-hidratante.webp",
   description: "Hidratación profunda para todo tipo de piel",
   category: "facial"
 }, {
   id: 2,
   name: "Sérum Vitamina C",
-  price: 39.99,
-  image: "https://i.ibb.co/B2BzjdY/vitamin-c-serum.jpg",
+  price: 18000,
+  image: "img/serun.jpg",
   description: "Ilumina y rejuvenece tu piel",
   category: "facial"
 }, {
@@ -449,7 +449,7 @@ function renderFilteredProducts() {
       <a href="/product/${product.id}" onclick="showProductDetails(${product.id}); return false;" class="product-link">
         <img src="${product.image}" alt="${product.name}" class="product-image">
         <h3 class="product-title">${product.name}</h3>
-        <p class="product-price">$${product.price.toFixed(2)}</p>
+        <p class="product-price">$${product.price.toLocaleString('es-CO')} Cop</p>
         <p>${product.description}</p>
       </a>
       <button class="add-to-cart" onclick="addToCart(${product.id})">
@@ -501,14 +501,14 @@ function updateCartUI() {
       <img src="${item.image}" alt="${item.name}" width="50" height="50">
       <div>
         <h4>${item.name}</h4>
-        <p>$${item.price.toFixed(2)} x ${item.quantity}</p>
+        <p>$${item.price.toLocaleString('es-CO')} x ${item.quantity}</p>
       </div>
       <button onclick="removeFromCart(${item.id})">×</button>
     </div>
   `).join('');
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  cartTotal.textContent = total.toFixed(2);
-  navCartTotal.textContent = total.toFixed(2);
+  cartTotal.textContent = total.toLocaleString('es-CO');
+  navCartTotal.textContent = total.toLocaleString('es-CO');
 }
 function toggleCart() {
   const cartModal = document.querySelector('.cart-modal');
@@ -527,9 +527,9 @@ function checkout() {
     alert('Por favor complete todos los datos de envío');
     return;
   }
-  const cartMessage = cart.map(item => `• ${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`).join('\n');
+  const cartMessage = cart.map(item => `• ${item.name} x${item.quantity} - $${(item.price * item.quantity).toLocaleString('es-CO')}`).join('\n');
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  const message = `¡Hola! Me gustaría realizar el siguiente pedido:\n\n` + `${cartMessage}\n\n` + `Total: $${total.toFixed(2)}\n\n` + `Datos de envío:\n` + `Nombre: ${name}\n` + `Dirección: ${address}\n` + `Celular: ${phone}\n` + `Método de pago: ${paymentMethod}`;
+  const message = `¡Hola! Me gustaría realizar el siguiente pedido:\n\n` + `${cartMessage}\n\n` + `Total: $${total.toLocaleString('es-CO')}\n\n` + `Datos de envío:\n` + `Nombre: ${name}\n` + `Dirección: ${address}\n` + `Celular: ${phone}\n` + `Método de pago: ${paymentMethod}`;
   const whatsappUrl = `https://wa.me/3015478439?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, '_blank');
   cart = [];
@@ -589,7 +589,7 @@ function showProductDetails(productId) {
       </div>
 
       <h2>${product.name}</h2>
-      <p class="product-price">$${product.price.toFixed(2)}</p>
+      <p class="product-price">$${product.price.toLocaleString('es-CO')}</p>
       
       <h3>Beneficios</h3>
       <ul>
