@@ -312,7 +312,9 @@
     cursor: pointer;
     transition: transform 0.3s;
     z-index: 1000;
+  text-decoration: none;
   }
+ 
   
   .whatsapp-float:hover {
     transform: scale(1.1);
