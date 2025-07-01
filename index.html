@@ -1,10 +1,14 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gloss Estethic - Cuidado Facial Premium</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gloss Estethic - Cuidado Facial Premium</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,17 +17,17 @@
     <div class="nav-content">
       <div class="logo">
         <img src="img/2peq.png" alt="Gloss Estethic Logo" class="logo-image"
-          style="height: 50px; width: auto; cursor: pointer;" onclick="showPage(&apos;inicio&apos;)">
+          style="height: 50px; width: auto; cursor: pointer;" onclick="showPage('inicio')">
       </div>
       <div class="nav-links">
         <button class="dropdown-toggle" onclick="toggleMenu()">
           <i class="fas fa-bars"></i>
         </button>
         <div class="dropdown-menu">
-          <a href="#" onclick="showPage(&apos;inicio&apos;); return false;">Inicio</a>
-          <a href="#" onclick="showPage(&apos;nosotros&apos;); return false;">Nosotros</a>
-          <a href="#" onclick="showPage(&apos;contacto&apos;); return false;">Contacto</a>
-          <a href="#" onclick="showPage(&apos;politicas&apos;); return false;">Pol&#xed;ticas de Env&#xed;o</a>
+          <a href="#" onclick="showPage('inicio'); return false;">Inicio</a>
+          <a href="#" onclick="showPage('nosotros'); return false;">Nosotros</a>
+          <a href="#" onclick="showPage('contacto'); return false;">Contacto</a>
+          <a href="#" onclick="showPage('politicas'); return false;">Políticas de Envío</a>
         </div>
       </div>
       <div class="cart-header-total">Total: &#x24;<span id="nav-cart-total">0.00</span></div>
@@ -284,23 +288,27 @@
     </div>
   </div>
   <!-- whatsapp flotante -->
-  <a class="ayuda" href="https://wa.me/3244664595?text=Hola%2C%20necesito%20asesoría%20de%20tus%20productos" target="_blank">
+  <a class="ayuda" href="https://wa.me/3244664595?text=Hola%2C%20necesito%20asesoría%20de%20tus%20productos"
+    target="_blank">
     ¿Necesitas ayuda?<br>¡Presiona aquí!
   </a>
-  <a href="https://wa.me/3244664595?text=Hola%2C%20necesito%20asesoría%20de%20tus%20productos" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/3244664595?text=Hola%2C%20necesito%20asesoría%20de%20tus%20productos" class="whatsapp-float"
+    target="_blank">
     <i class="fab fa-whatsapp"></i>
     <!-- <span class="cont">Contáctanos</span> -->
   </a>
-  
+
   <!-- footer -->
   <footer>
     <div class="footer-content">
       <h3>Síguenos en nuestras redes sociales</h3>
       <div class="social-links">
-        <a href="https://www.instagram.com/cuidado_facial_gloss_esthetic?igsh=MWU0dG81bXQxa293aA==" target="_blank" class="social-link">
+        <a href="https://www.instagram.com/cuidado_facial_gloss_esthetic?igsh=MWU0dG81bXQxa293aA==" target="_blank"
+          class="social-link">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://wa.me/3244664595?text=Hola%2C%20estoy%20interesad@%20en%20tus%20productos" target="_blank" class="social-link">
+        <a href="https://wa.me/3244664595?text=Hola%2C%20estoy%20interesad@%20en%20tus%20productos" target="_blank"
+          class="social-link">
           <i class="fab fa-whatsapp"></i>
         </a>
         <a href="https://facebook.com/gloss.estethic" target="_blank" class="social-link">
@@ -311,6 +319,7 @@
   </footer>
 
   <script>
+
     const products = [
       // cremas faciales
       {
@@ -416,7 +425,7 @@
         description: "Anti-arrugas, Reafirma,<br/> Hidrata y Nutre",
         category: "Serum Faciales"
       },
-       {
+      {
         id: 14,
         name: "Serum Blanqueadora<br/> con Niacinamida",
         price: 10000,
@@ -426,7 +435,7 @@
       },
 
       // Tonicos Faciales 
-        {
+      {
         id: 15,
         name: "Tonico Polipéptido <br/> de Perilla",
         price: 15000,
@@ -434,7 +443,7 @@
         description: "Hidrata, Reafirma,<br/> Antiedad y Calmante",
         category: "Tonicos Faciales"
       },
-       {
+      {
         id: 16,
         name: "Tonico Vitamina C <br/> Blanqueadora",
         price: 18000,
@@ -442,7 +451,7 @@
         description: "Blanqueadora, Hidrata<br/> y Despigmenta",
         category: "Tonicos Faciales"
       },
-       {
+      {
         id: 17,
         name: "Tonico Rosa y Acido <br/> Hialuronico",
         price: 15000,
@@ -452,7 +461,7 @@
       },
 
       // Mascarillas
-       {
+      {
         id: 18,
         name: "Mascarilla Hinojo <br/> de  Mar",
         price: 4000,
@@ -460,7 +469,7 @@
         description: " Hidrata, Antiarrugas<br/>Piel firme",
         category: "Mascarillas"
       },
-        {
+      {
         id: 19,
         name: "Mascarilla<br/> Vitamina C",
         price: 3000,
@@ -488,25 +497,25 @@
       }
 
       // Esencias
-    , {
+      , {
         id: 22,
         name: "Esencia de Arroz<br/> y Acido Hialuronico",
         price: 10000,
         image: "/img/esencia-arroz.png",
         description: "Blanquea, suaviza,<br/> reafrima y humecta",
         category: "Esencias"
-      }, 
+      },
 
       // Exfoliantes
       {
         id: 23,
-        name: "Gel Exfoliante <br/> de Arroz",
+        name: "Gel Exfoliante <br/>  de Arroz",
         price: 15000,
         image: "/img/gel-arroz.png",
         description: "Exfolia, Aclara<br/>y  Suaviza",
         category: "Exfoliantes"
       },
-     
+
 
     ];
 
