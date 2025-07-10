@@ -259,6 +259,7 @@ main {
   flex-direction: column;
   align-items: center;
   min-height: 370px;
+  justify-content: space-between;
   /* Ajusta según tu diseño */
 }
 
@@ -298,6 +299,12 @@ main {
   cursor: pointer;
   transition: background 0.3s;
   margin-bottom: 0.5rem;
+}
+
+.add-to-cart[disabled] {
+  background: #ccc;
+  color: #888;
+  cursor: not-allowed;
 }
 
 .add-to-cart:hover {

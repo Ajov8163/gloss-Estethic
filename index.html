@@ -56,6 +56,8 @@
       <button class="category-btn" onclick="filterByCategory('Contorno')">Contorno de Ojos</button>
       <button class="category-btn" onclick="filterByCategory('Esencias')">Esencias</button>
       <button class="category-btn" onclick="filterByCategory('Exfoliantes')">Exfoliantes</button>
+      <button class="category-btn" onclick="filterByCategory('kits')">Kits</button>
+
     </div>
 
     <div class="products-grid">
@@ -329,35 +331,40 @@
         price: 15000,
         image: "/img/crema-c-white.png",
         description: "Iluminadora y <br/> despigmentante",
-        category: "Cremas Faciales"
+        category: "Cremas Faciales",
+        stock: 1
       }, {
         id: 2,
         name: "Crema Centella<br/> Asiatica",
         price: 14000,
         image: "img/crema-centella.png",
         description: "Antiacné, reparadora <br/> y calmante",
-        category: "Cremas Faciales"
+        category: "Cremas Faciales",
+        stock: 1
       }, {
         id: 3,
         name: "Crema Rosas y Acido Hialuronico",
         price: 16000,
         image: "/img/crema-hyaluronic1.webp",
         description: "Rejuvenece, piel <br/> firme y tonificada",
-        category: "Cremas Faciales"
+        category: "Cremas Faciales",
+        stock: 0
       }, {
         id: 4,
         name: "Crema Hinojo <br/>de Mar",
         price: 11000,
         image: "/img/crema-hinojo-1.png",
         description: "Anti-arrugas, Reafirma, Hidrata y Nutre",
-        category: "Cremas Faciales"
+        category: "Cremas Faciales",
+        stock: 1
       }, {
         id: 5,
         name: "Crema Polipéptido<br/> de Perilla",
         price: 10000,
         image: "/img/crema-perilla.png",
         description: "crema nutritiva hidratante antienvejecimiento",
-        category: "Cremas Faciales"
+        category: "Cremas Faciales",
+        stock: 1
       },
 
       // jabones faciales
@@ -367,14 +374,16 @@
         price: 15000,
         image: "/img/jabon-hinojo.png",
         description: "Limpia, Reafirma, Hidrata y Nutre",
-        category: "Jabones Faciales"
+        category: "Jabones Faciales",
+        stock: 1
       }, {
         id: 7,
         name: "Jabon Polipéptido<br/> de Perilla",
         price: 15000,
         image: "/img/jabon-perilla.png",
         description: "Limpieza profunda y retención de humedad",
-        category: "Jabones Faciales"
+        category: "Jabones Faciales",
+        stock: 1
       },
       {
         id: 8,
@@ -382,7 +391,8 @@
         price: 15000,
         image: "/img/jabon-centella.png",
         description: "Limpia poros, humecta <br/> y repara",
-        category: "Jabones Faciales"
+        category: "Jabones Faciales",
+        stock: 1
       },
 
       // serum faciales
@@ -392,7 +402,8 @@
         price: 15000,
         image: "/img/serum-acne.png",
         description: "Rejuvenecedor y remueve el acné",
-        category: "Serum Faciales"
+        category: "Serum Faciales",
+        stock: 1
       },
       {
         id: 10,
@@ -400,7 +411,8 @@
         price: 8000,
         image: "/img/serum-centella.png",
         description: "Reparador, Calmante, Nutre y anti-acné",
-        category: "Serum Faciales"
+        category: "Serum Faciales",
+        stock: 1
       },
       {
         id: 11,
@@ -408,7 +420,8 @@
         price: 9000,
         image: "/img/serum-perilla.png",
         description: "Hidrata, Nutre y piel <br/> luminosa",
-        category: "Serum Faciales"
+        category: "Serum Faciales",
+        stock: 1
       },
       {
         id: 12,
@@ -416,7 +429,8 @@
         price: 10000,
         image: "/img/serum-rose.png",
         description: "Antioxidante, Antiedad y Reduce poros",
-        category: "Serum Faciales"
+        category: "Serum Faciales",
+        stock: 0
       },
       {
         id: 13,
@@ -424,7 +438,8 @@
         price: 9000,
         image: "/img/serum-hinojo.png",
         description: "Anti-arrugas, Reafirma,<br/> Hidrata y Nutre",
-        category: "Serum Faciales"
+        category: "Serum Faciales",
+        stock: 1
       },
       {
         id: 14,
@@ -432,7 +447,8 @@
         price: 10000,
         image: "/img/serum-blanqueador.png",
         description: "Aclara las manchas<br/> y las empareja",
-        category: "Serum Faciales"
+        category: "Serum Faciales",
+        stock: 1
       },
 
       // Tonicos Faciales 
@@ -442,7 +458,8 @@
         price: 15000,
         image: "/img/tonico-perilla.png",
         description: "Hidrata, Reafirma,<br/> Antiedad y Calmante",
-        category: "Tonicos Faciales"
+        category: "Tonicos Faciales",
+        stock: 1
       },
       {
         id: 16,
@@ -450,7 +467,8 @@
         price: 18000,
         image: "/img/tonico-white.png",
         description: "Blanqueadora, Hidrata<br/> y Despigmenta",
-        category: "Tonicos Faciales"
+        category: "Tonicos Faciales",
+        stock: 1
       },
       {
         id: 17,
@@ -458,7 +476,8 @@
         price: 15000,
         image: "/img/tonico-rose.png",
         description: "Antioxidante, Hidrata,<br/>Reduce los poros",
-        category: "Tonicos Faciales"
+        category: "Tonicos Faciales",
+        stock: 0
       },
 
       // Mascarillas
@@ -468,7 +487,8 @@
         price: 4000,
         image: "/img/mascarilla-hinojo.png",
         description: " Hidrata, Antiarrugas<br/>Piel firme",
-        category: "Mascarillas"
+        category: "Mascarillas",
+        stock: 1
       },
       {
         id: 19,
@@ -476,7 +496,8 @@
         price: 3000,
         image: "/img/mascarilla-c.png",
         description: " Antioxidante, Repara <br/>y Despigmenta",
-        category: "Mascarillas"
+        category: "Mascarillas",
+        stock: 1
       },
 
       // Contorno de Ojos
@@ -486,7 +507,8 @@
         price: 10000,
         image: "/img/contorno-rose.png",
         description: "Reduce linea de expresion<br/> y ojeras",
-        category: "Contorno"
+        category: "Contorno",
+        stock: 0
       },
       {
         id: 21,
@@ -494,7 +516,8 @@
         price: 7000,
         image: "/img/contorno-centella.png",
         description: "Hidrata y Suaviza las <br/> Lineas de Expresión",
-        category: "Contorno"
+        category: "Contorno",
+        stock: 1
       }
 
       // Esencias
@@ -504,7 +527,8 @@
         price: 10000,
         image: "/img/esencia-arroz.png",
         description: "Blanquea, suaviza,<br/> reafrima y humecta",
-        category: "Esencias"
+        category: "Esencias",
+        stock: 1
       },
 
       // Exfoliantes
@@ -514,8 +538,51 @@
         price: 15000,
         image: "/img/gel-arroz.png",
         description: "Exfolia, Aclara<br/>y  Suaviza",
-        category: "Exfoliantes"
+        category: "Exfoliantes",
+        stock: 1
       },
+
+
+
+      //kits
+      {
+        id: 24,
+        name: "Kit Centella Asiatica",
+        price: 38000,
+        image: "/img/kit-centella.png",
+        description: " Equilibra, rejuvenece y suaviza tu piel.",
+        category: "kits",
+        stock: 1
+      },
+      {
+        id: 25,
+        name: "Kit Rosas y Acido Hialuronico",
+        price: 38000,
+        image: "/img/kit-rose.png",
+        description: " Belleza, frescura y piel renovada",
+        category: "kits",
+        stock: 0
+      },
+      {
+        id: 26,
+        name: "Kit Hinojo de Mar",
+        price: 38000,
+        image: "/img/kit-hinojo.png",
+        description: " Reafirma, hidrata y nutre tu piel.",
+        category: "kits",
+        stock: 1
+      },
+      {
+        id: 27,
+        name: "Kit Polipéptido de Perilla",
+        price: 38000,
+        image: "/img/kit-perilla.png",
+        description: "Cuida, suaviza y nutre con perilla activa.",
+        category: "kits",
+        stock: 1
+      }
+
+
 
 
     ];
@@ -546,19 +613,19 @@
       // Mostrar todos los productos filtrados, sin paginación
       const productsToShow = filteredProducts;
       const productsGrid = document.querySelector('.products-grid');
-      productsGrid.innerHTML = productsToShow.map(product => `
-    <div class="product-card">
-     
-        <img src="${product.image}" alt="${product.name}" class="product-image">
-        <h3 class="product-title">${product.name}</h3>
-        <p class="product-price">$${product.price.toLocaleString('es-CO')} Cop</p>
-        <p class="produc-descripcion">${product.description}</p>
-    
-      <button class="add-to-cart" onclick="addToCart(${product.id})">
-        Agregar al Carrito
-      </button>
-    </div>
-  `).join('');
+    productsGrid.innerHTML = productsToShow.map(product => `
+  <div class="product-card">
+    <img src="${product.image}" alt="${product.name}" class="product-image">
+    <h3 class="product-title">${product.name}</h3>
+    <p class="product-price">$${product.price.toLocaleString('es-CO')} Cop</p>
+    <p class="produc-descripcion">${product.description}</p>
+    ${
+      product.stock === 0
+        ? `<button class="add-to-cart" disabled style="background: #ccc; cursor: not-allowed;">Agotado</button>`
+        : `<button class="add-to-cart" onclick="addToCart(${product.id})">Agregar al Carrito</button>`
+    }
+  </div>
+`).join('');
     }
 
     let cart = [];
